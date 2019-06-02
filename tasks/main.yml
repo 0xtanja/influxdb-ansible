@@ -1,0 +1,9 @@
+---
+- include_vars: "{{ ansible_distribution | lower }}.yml"
+
+- name: Install
+  become: yes
+  package:
+    name: "{{ influxdb_package_name }}"
+    state: present
+  when: install

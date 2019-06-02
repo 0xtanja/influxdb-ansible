@@ -1,0 +1,2 @@
+---
+influxdb_package_name: "influxdb={{ influxdb_version }}-1"

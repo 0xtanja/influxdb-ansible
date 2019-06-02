@@ -1,0 +1,4 @@
+---
+install: yes
+
+influxdb_version: 1.7.6
