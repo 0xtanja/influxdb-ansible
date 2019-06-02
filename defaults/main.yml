@@ -1,4 +1,8 @@
 ---
 install: yes
+configure: yes
 
 influxdb_version: 1.7.6
+
+influxdb_etc: /etc/influxdb/
+influxdb_conf: "{{ influxdb_etc }}/influxdb.conf"

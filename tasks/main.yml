@@ -7,3 +7,9 @@
     name: "{{ influxdb_package_name }}"
     state: present
   when: install
+
+- name: Configure
+  become: yes
+  template:
+    src: influxdb.conf.j2
+    dest: "{{ influxdb_conf }}"
